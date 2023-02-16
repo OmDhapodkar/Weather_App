@@ -1,0 +1,83 @@
+.cfdiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:30px;
+}
+
+
+h1 {
+    font-family: GilroyExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3rem;
+    letter-spacing: 0.5px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.7);
+    width: 170%;
+  }
+  
+
+.cfbuttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 30%;
+}
+
+.cfdiv .btn1 {
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    font-family: GilroySemiBold;
+    color: #ffffff;
+    font-size: 18px !important;
+    background: #6b27f8;
+    padding: 3.5% !important;
+    text-decoration: none;
+    border: none;
+    width: 35% !important;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .btn1:hover {
+    background: #4506c8;
+    text-decoration: none;
+  }
+  
+  .cfdiv  .btn2 {
+    cursor: pointer;
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    font-family: GilroySemiBold;
+    color: #9362fa;
+    font-size: 18px !important;
+    background: #1f1f1f;
+    padding: 3.5% !important;
+    border: solid #6b27f8 3px;
+    text-decoration: none;
+    width: 35% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn2:hover {
+    background: #383838;
+    text-decoration: none;
+  }
+
+.headingDiv{
+    display: flex;
+}
+
+.headingDiv img{
+    margin-left: 10px;
+    height: 60px;
+    width: 60px;
+}

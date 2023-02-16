@@ -1,0 +1,86 @@
+.weather {
+  width: 350px !important;
+  border-radius: 25px !important;
+  box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 20%);
+  color: #fff;
+  background-color: #1f1f1f;
+  margin: 0 auto 0 auto !important;
+  padding: 0 20px 20px 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.weather:hover{
+  cursor: pointer;
+  border-radius: 25px;
+  box-shadow: 0 0.4rem 1.4rem 0 rgba(85, 85, 85, 0.1);
+  transform: translate3d(0, -0.3rem, 0) scale(1.01);
+  transition: all 0.4s ease-in-out;
+}
+
+
+.details{
+  width: 135px !important;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.city {
+  font-family: GilroySemiBold;
+  font-style: normal;
+  line-height: 29px;
+  color: #ffffff;
+  font-size: 26px !important;
+  line-height: 1;
+  margin-bottom: 5px !important;
+}
+
+.weather-description {
+  font-family: GilroyMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px !important;
+  line-height: 22px;
+  letter-spacing: 0.25px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.weather-icon {
+  width: 125px;
+}
+
+.temperature {
+  font-family: GilroySemiBold;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 75px !important;
+
+  color: rgba(255, 255, 255, 0.7);
+  margin: 10px 0;
+  letter-spacing: 1px !important; 
+}
+
+
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.parameter-label {
+  font-family: GilroySemiBold;
+  text-align: left;
+  font-size: 16px !important;
+}
+
+.parameter-value {
+  font-family: GilroyMedium;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: right;
+  font-size: 14px !important;
+}

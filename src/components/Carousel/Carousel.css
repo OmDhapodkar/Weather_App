@@ -1,0 +1,84 @@
+.carouselweather {
+    width: 300px !important;
+    border-radius: 25px !important;
+    color: #fff;
+    background-color: #1f1f1f;
+    margin: 20px 20px 0 20px;
+    padding: 0 20px 20px 20px;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .carouselweather:hover{
+    cursor: pointer;
+    border-radius: 25px;
+    transform: translate3d(0, -0.3rem, 0) scale(1.01);
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .top,
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .carouselcity {
+    font-family: GilroySemiBold;
+    font-style: normal;
+    line-height: 29px;
+    color: #ffffff;
+    font-size: 18px !important;
+    line-height: 1;
+    margin-bottom: 3px !important;
+  }
+  
+  .carouselweather-description {
+    font-family: GilroyMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+  }
+  
+  .carouselweather-icon {
+    width: 100px;
+  }
+  
+  .carouseltemperature {
+    font-family: GilroySemiBold;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px !important;
+  
+    color: rgba(255, 255, 255, 0.7);
+    margin: 10px 0;
+    letter-spacing: 1px !important; 
+  }
+  
+  .carouseldetails{
+    width: 150px;
+  }
+
+
+  .carouselparameter-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .carouselparameter-label {
+    font-family: GilroySemiBold;
+    text-align: left;
+    font-size: 14px !important;
+  }
+  
+  .carouselparameter-value {
+    font-family: GilroyMedium;
+    color: rgba(255, 255, 255, 0.7);
+    text-align: right;
+    font-size: 12px !important;
+  }

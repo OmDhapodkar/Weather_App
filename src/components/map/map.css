@@ -1,0 +1,29 @@
+.map{
+    transform: translate3d(390px,-60px,0px) !important;  
+    width: 300px;
+    margin: 20px auto 0 auto;
+    padding: 0 20px 20px 20px;
+}
+
+.btn1 {
+    -webkit-border-radius: 12;
+    -moz-border-radius: 12;
+    border-radius: 12px;
+    font-family: GilroySemiBold;
+    color: #ffffff;
+    font-size: 20px;
+    background: #6b27f8;
+    padding: 3%;
+    text-decoration: none;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn1:hover {
+    background: #4506c8;
+    text-decoration: none;
+  }
