@@ -1,44 +1,57 @@
 import React from "react";
 import "./current-weather.css";
 
-const CurrentWeather = ({ data,cf }) => {
+const CurrentWeather = ({ data, cf }) => {
+  // console.log(data);
   return (
     <div className="weather">
       <div className="top">
         <div>
-          <p className="city">{data.location.name}</p>
-          <p className="weather-description">{data.current.condition.text}</p>
+          <p className="city">{data.name}</p>
+          <p className="weather-description">{data.weather[0].description}</p>
         </div>
         <img
-          alt="weather"
+          alt={`${data.weather[0].icon}`}
           className="weather-icon"
-          src={`${data.current.condition.icon}`}
+          src={`https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
         />
       </div>
       <div className="bottom">
-        {cf && <p className="temperature">{data.current.temp_c}°C</p>}
-        {!cf && <p className="temperature">{data.current.temp_f}°F</p>}
+        {cf && <p className="temperature">{data.main.temp}°C</p>}
+        {!cf && (
+          <p className="temperature">
+            {parseFloat((data.main.temp * (9 / 5) + 32).toFixed(2))}°F
+          </p>
+        )}
         <div className="details">
           <div className="parameter-row">
             <span className="parameter-label">Feels like</span>
-            {cf && <span className="parameter-value">{data.current.feelslike_c}°C</span>}
-            {!cf && <span className="parameter-value">{data.current.feelslike_f}°F</span>}
+            {cf && (
+              <span className="parameter-value">{data.main.feels_like}°C</span>
+            )}
+            {!cf && (
+              <span className="parameter-value">
+                {parseFloat((data.main.feels_like * (9 / 5) + 32).toFixed(2))}°F
+              </span>
+            )}
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Wind</span>
-            <span className="parameter-value">{data.current.wind_kph} kph</span>
+            <span className="parameter-value">{data.wind.speed} mps</span>
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Humidity</span>
-            <span className="parameter-value">{data.current.humidity}%</span>
+            <span className="parameter-value">{data.main.humidity}%</span>
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Pressure</span>
-            <span className="parameter-value">{data.current.pressure_mb} hPa</span>
+            <span className="parameter-value">{data.main.pressure} hPa</span>
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Visibility</span>
-            <span className="parameter-value">{data.current.vis_km} Km</span>
+            <span className="parameter-value">
+              {parseFloat((data.visibility / 1000).toFixed(2))} Km
+            </span>
           </div>
         </div>
       </div>
