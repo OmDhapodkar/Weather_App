@@ -1,6 +1,7 @@
 .carouselweather {
-    width: 300px !important;
+    width: 290px !important;
     border-radius: 25px !important;
+    border: solid 3px rgb(80, 80, 193);
     color: #fff;
     background-color: #1f1f1f;
     margin: 20px 20px 0 20px;

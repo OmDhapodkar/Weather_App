@@ -1,10 +1,16 @@
-import React,{useState} from "react";
 import "./map.css";
 
 const Map = (props) => {
-    return (
+  return (
     <div className="map">
-        <button className="btn1" onClick={()=>{props.handleOnLocationChange()}}>Use Your Current Locaiton</button>
+      <button
+        className="btn1"
+        onClick={() => {
+          props.handleOnLocationChange();
+        }}
+      >
+        Use Your Current Location
+      </button>
     </div>
   );
 };

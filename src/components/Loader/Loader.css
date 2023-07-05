@@ -52,7 +52,7 @@
 	 opacity: 0;
 	 border-radius: 100%;
 }
- .about .social.portfolio {
+ .about .social.github {
 	 transition: all 0.8s ease;
 }
 
@@ -85,12 +85,12 @@
 	 background-size: 65%;
 	 opacity: 1;
 }
- .about:hover .social.portfolio {
+ .about:hover .social.github {
 	 right: 0;
 	 bottom: calc(100% - 40px);
 	 transition: all 0.3s 0s cubic-bezier(0.64, 0.01, 0.07, 1.65);
 }
- .about:hover .social.portfolio .icon:hover {
+ .about:hover .social.github .icon:hover {
 	 background-color: #698fb7;
 }
  .about:hover .social.dribbble {

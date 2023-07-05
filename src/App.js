@@ -73,7 +73,6 @@ function App() {
         .then((response) => {
           showSuccessSnack("Successful");
           const forcastResponse = response.data;
-          console.log(forcastResponse);
           setForecast({ city: "Delhi", ...forcastResponse });
         })
         .catch((err) => {

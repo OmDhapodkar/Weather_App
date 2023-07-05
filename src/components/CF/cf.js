@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import "./cf.css";
 import icon from "../../icons/map.png";
 
@@ -16,7 +15,7 @@ const cf = (props) => {
     <div className="cfdiv">
       <div className="headingDiv">
         <h1>Weather Forecasting App</h1>
-        <img className="weathericon" src={icon} />
+        <img className="weathericon" alt="temperature" src={icon} />
       </div>
       <div className="cfbuttons">
         <button className="btn1" onClick={change1}>

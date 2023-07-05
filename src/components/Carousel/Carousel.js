@@ -3,8 +3,6 @@ import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
 import "./Carousel.css";
 
-const handleDragStart = (e) => e.preventDefault();
-
 const WEEK_DAYS = [
   "Monday",
   "Tuesday",
